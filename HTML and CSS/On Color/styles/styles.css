@@ -2,27 +2,52 @@
 
 p, ul, ol {
 	color: black;
-	font-family: "Courier New", Courier, monospace;
+	font-family: "Raleway", Arial, sans;
 	font-size: 1em;
 	line-height: 1.3em;
 	text-align: left;
 }
 
+
 /*Link states*/
 
 a:link, a:visited {
 	color: black;
-	background: LightGray;
 	text-decoration: none;
-}
+	}
 
 a:focus, a:hover {
-	color: white;
-}
+	color: lightgray;
+	transition: color .3s ease-in-out;
+	-webkit-transition: color .3s ease-in-out;
+	}
 
 a:active {
-	background-color: black;
-}
+	}
+
+.navlink {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding: 4px 7px 2px;
+	border-radius: 3px;
+	transition: background-color .3s ease-in-out;
+	-webkit-transition: background-color .3s ease-in-out;
+	}
+
+#redlink:hover {
+	background-color: #FFADAD;
+	color: red;
+	}
+	
+#bluelink:hover {
+	background-color: #ADADFF;
+	color: blue;
+	}
+
+#greenlink:hover {
+	background-color: #ADFFAD;
+	color: green;
+	}
+
 
 /*Linked font*/
 
@@ -33,28 +58,40 @@ a:active {
 		url('fonts/raleway.ttf'),
 		url('fonts/raleway.woff'),
 		url('fonts/raleway.svg');
-}
+	}
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: Raleway, Helvetica, sans-serif;
 	font-weight: normal;
-}
+	}
+
 
 /*Page structure*/
 
 #container {
 	width: 80%;
 	margin: auto;
-}
-
+	}
+	
 #content {
 	margin-top: 4em;
 	border-top: 1px solid black;
-}
+	}
 
 #footer {
 	margin-top: 2em;
-}
+	}
+
+.footer {
+	font-family: Arial, sans;
+	text-align: center;
+	color: gray;
+	}
+
+#navigation {
+	margin-left: -7px;
+	}
+
 
 /*Flow of content*/
 
@@ -62,17 +99,17 @@ img {
 	float: left;
 	padding-right: 2%;
 	padding-bottom: .5em;
-}
+	}
 
 ul, ol {
 	list-style: none;
 	padding-left: 0;
-}
+	}
 
 li {
 	float: left;
 	padding-right: 2%;
-}
+	}
 
 .shift {
 	position: relative;
@@ -81,7 +118,8 @@ li {
 	z-index: -1;
 	opacity: .5;
 	display: none;
-}
+	}
+
 
 /*Media query*/
 
